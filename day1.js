@@ -1,7 +1,7 @@
 const fs = require("fs");
-
+// trim remove space befoe and after string
 const input = fs
-  .readFileSync("./input", "utf-8")
+  .readFileSync("./input1", "utf-8")
   .trim()
   .split("")
   .map(digits => parseInt(digits));

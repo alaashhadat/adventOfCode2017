@@ -8,7 +8,7 @@ const input = fs
   })
   .trim()
   .split("")
-  .map(inputDigits => parseInt(inputDigits));
+  .map(inputDigits => parseInt(inputDigits), 10);
 //part 2
 const inputLength = input.length;
 input.push(input[0]);

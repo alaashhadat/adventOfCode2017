@@ -11,7 +11,7 @@ const spreadsheet =
   spreadsheetAsString
     .split('\n')
     .map(string => string.split('\t')
-      .map(number => parseInt(number)));
+      .map(number => parseInt(number), 10));
 const total = sum =>
   sum.reduce((a, b) => a + b, 0)
 const answer =

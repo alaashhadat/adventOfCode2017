@@ -12,7 +12,7 @@ const text = fs
 const isNotDuplicated = text => {
   const duplicated = {};
   const words = text.split(" ")
-  for (word of words) {
+  for (let word of words) {
     if (duplicated[word]) {
       return false;
     }
@@ -20,7 +20,6 @@ const isNotDuplicated = text => {
   }
   return true;
 }
+
 const answer = text.filter(isNotDuplicated).length
-
 console.log(answer);
-

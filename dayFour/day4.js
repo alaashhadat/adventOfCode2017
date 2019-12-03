@@ -21,5 +21,6 @@ const isNotDuplicated = text => {
   return true;
 }
 const answer = text.filter(isNotDuplicated).length
+
 console.log(answer);
 

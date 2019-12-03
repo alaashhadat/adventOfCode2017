@@ -7,13 +7,12 @@ const spreadsheetAsString = fs.
     }
   })
   .trim();
-const spreadsheet =
-  spreadsheetAsString
-    .split('\n')
-    .map(string => string.split('\t')
-      .map(number => parseInt(number), 10));
+const spreadsheet = spreadsheetAsString
+  .split('\n')
+  .map(string => string.split('\t')
+    .map(number => parseInt(number), 10));
 const total = sum =>
   sum.reduce((a, b) => a + b, 0)
-const answer =
-  total(spreadsheet.map(arr => Math.max(...arr) - Math.min(...arr)));
+const answer = total(spreadsheet.map(arr => Math.max(...arr) - Math.min(...arr)));
+
 console.log(answer)
